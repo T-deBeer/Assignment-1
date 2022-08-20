@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Multimedia/Images/DepartmentImage.png">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <title>Vaccines Registration</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img class="title-img" src="../Multimedia/Images/DepartmentImage.png" alt="Image could not be found">
+            <ul>
+                <li>
+                    <a class="active" href="./registration.html">Registration</a>
+                </li>
+                <li>
+                    <a href="./vaccine.html">Vaccine Information</a>
+                </li>
+                <li>
+                    <a href="./date.html">Change Current Date</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="phases">
+        <h5 id="p1">Phase 1</h5>
+        <h5 id="p2">Phase 2</h5>
+        <h5 id="p3">Phase 3</h5>
+        <h5 id="p4">Phase 4</h5>
+        <hr class="divider">
+        <p id="days-till-next"></p>
+    </aside>
+    <div class="content">
+        <h2>REGISTER FOR YOUR VACCINE</h2>
+        <h2 id="date"></h2>
+        <hr class="divider">
+        <div>
+            <form id="form">
+                <div>
+                    <label>NAME</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label>SURNAME</label>
+                    <input type="text" id="surname" required>
+                </div>
+                <div>
+                    <label>EMAIL</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label>PROVINCE</label>
+                    <select name="provinces" id="prov" required readonly>
+                        <option value="Gauteng">Gauteng</option>
+                        <option value="Eastern Cape">Eastern Cape</option>
+                        <option value="KwaZulu-Natal">KwaZulu Natal</option>
+                        <option value="Limpopo">Limpopo</option>
+                        <option value="Mpumalanga">Mpumalanga</option>
+                        <option value="Northern Cape">Northern Cape</option>
+                        <option value="North West">North West</option>
+                        <option value="Western Cape">Western Cape</option>
+                        <option value="Free State">Free State</option>
+                    </select>
+                </div>
+                <div>
+                    <label>DATE OF BIRTH</label>
+                    <input type="date" id="dob" required>
+                </div>
+                <div>
+                    <label>VACCINATION DATE</label>
+                    <input type="date" id="date-selector" required>
+                </div>
+                <button type="submit" id="reg">REGISTER</button>
+            </form>
+
+        </div>
+        <hr class="divider">
+        <h2>CURRENT REGISTER</h2>
+        <div class="registry">
+            <ul id="registry-list">
+                <li class="registry-list-item">
+                    <h3>NAME</h3>
+                    <h3>SURNAME</h3>
+                    <h3>EMAIL</h3>
+                    <h3>AGE</h3>
+                    <h3>VAX DATE</h3>
+                </li>
+            </ul>
+        </div>
+        <hr class="divider">
+    </div>
+    <script type="module" src="../Scripts/main.js"></script>
+</body>
+
+</html>

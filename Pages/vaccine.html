@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Multimedia/Images/DepartmentImage.png">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <title>Vaccines Registration</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img class="title-img" src="../Multimedia/Images/DepartmentImage.png" alt="Image could not be found">
+            <ul>
+                <li>
+                    <a href="./registration.html">Registration</a>
+                </li>
+                <li>
+                    <a class="active" href="./vaccine.html">Vaccine Information</a>
+                </li>
+                <li>
+                    <a href="./date.html">Change Current Date</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>VACCINES</h2>
+        <hr class="divider">
+        <div class="player">
+            <h3>What is a vaccine?</h3>
+            <video class="vid" src="../Multimedia/Videos/Vaccine.mp4" controls></video>
+        </div>
+        <hr class="divider">
+        <div class="report">
+            <h3>Report</h3>
+            <div class="form">
+                <button id="btn-p1">Phase 1</button>
+                <button id="btn-p2">Phase 2</button>
+                <button id="btn-p3">Phase 3</button>
+                <button id="btn-p4">Phase 4</button>
+            </div>
+            <h3 id="phase-id">Phase 2</h3>
+            <div id="graph" class="graph">
+                <div class="prov-data">
+                    <span class="prov-name">Gauteng</span>
+                    <div id="gau-bar" class="bar"></div>
+                </div>
+                <div class="prov-data">
+                    <span class="prov-name">KwaZulu-Natal</span>
+                    <div id="kzn-bar" class="bar"></div>
+                </div>
+                <div class="prov-data">
+                    <span class="prov-name">North West</span>
+                    <div id="nw-bar" class="bar"></div>
+                </div>
+                <div class="prov-data">
+                    <span class="prov-name">Eastern Cape</span>
+                    <div id="ec-bar" class="bar"></div>
+                </div>
+                <div class="prov-data">
+                    <span class="prov-name">Western Cape</span>
+                    <div id="wc-bar" class="bar"></div>
+                </div>
+                <div class="prov-data">
+                    <span class="prov-name">Northern Cape</span>
+                    <div id="nc-bar" class="bar"></div>
+                </div>
+                <div class="prov-data">
+                    <span class="prov-name">Limpopo</span>
+                    <div id="limp-bar" class="bar"></div>
+                </div>
+                <div class="prov-data">
+                    <span class="prov-name">Mpumalanga</span>
+                    <div id="mpum-bar" class="bar"></div>
+                </div>
+                <div class="prov-data">
+                    <span class="prov-name">Free State</span>
+                    <div id="fs-bar" class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../Scripts/main.js"></script>
+    <script type="module" src="../Scripts/bar-graph.js"></script>
+</body>
+
+</html>

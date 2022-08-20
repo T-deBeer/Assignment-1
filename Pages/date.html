@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Multimedia/Images/DepartmentImage.png">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <title>Vaccines Registration</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img class="title-img" src="../Multimedia/Images/DepartmentImage.png" alt="Image could not be found">
+            <ul>
+                <li>
+                    <a href="./registration.html">Registration</a>
+                </li>
+                <li>
+                    <a href="./vaccine.html">Vaccine Information</a>
+                </li>
+                <li>
+                    <a class="active" href="./date.html">Change Current Date</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="phases">
+        <h5 id="p1">Phase 1</h5>
+        <h5 id="p2">Phase 2</h5>
+        <h5 id="p3">Phase 3</h5>
+        <h5 id="p4">Phase 4</h5>
+        <hr class="divider">
+        <p id="days-till-next"></p>
+    </aside>
+    <div class="content">
+        <h2>CHANGE DATE(debug tool)</h2>
+        <hr class="divider">
+        <div>
+            <form>
+                <legend>
+                    <p>
+                        This is used to change the date of the website <br>
+                        to debug and see wheter or not the date checking works
+                    </p>
+                </legend>
+                <div>
+                    <label>ENTER NEW DATE</label>
+                    <input type="date" id="date-changer" required>
+                </div>
+                <button type="submit" id="change-date">CHANGE SITE DATE</button>
+            </form>
+        </div>
+        <script type="module" src="../Scripts/main.js"></script>
+</body>
+
+</html>
